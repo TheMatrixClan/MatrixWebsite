@@ -8,7 +8,7 @@ body {
 }
 
 body {
-    background: url(me2018.jpg);
+    background: url(me2021.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -60,20 +60,6 @@ body {
         padding-left: 25px;
     }
 }
-
-
-/*
-@media (max-width:768px) {
-    body {
-        background: url(me2018.jpg);
-    }
-}
-
-@media (min-width:769px) {
-    body {
-        background: url(me2018_mob.jpg);
-    }
-}*/
 
 .teasetext {
     text-align: center;
@@ -156,6 +142,10 @@ body {
 }
 
 @media only screen and (max-width: 750px) {
+    body {
+        background: url(me2021_mob.png);
+        background-size: cover;
+    }
     .buttons {
         width: 100%;
         margin-top: 45px;
