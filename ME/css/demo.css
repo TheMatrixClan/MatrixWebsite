@@ -79,6 +79,7 @@ body {
     display: block;
     position: relative;
     width: auto;
+    min-width: 470px;
     margin: 0 auto;
     margin-top: 30px;
 }
@@ -112,6 +113,7 @@ body {
     display: block;
     position: relative;
     width: auto;
+    min-width: 470px;
     margin: 0 auto;
     margin-top: 30px;
 }
@@ -144,7 +146,7 @@ body {
 @media only screen and (max-width: 750px) {
     body {
         background: url(me2021_mob.png);
-        background-size: cover;
+        background-size: auto;
     }
     .buttons {
         width: 100%;
