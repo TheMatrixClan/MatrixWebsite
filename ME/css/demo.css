@@ -29,6 +29,15 @@ body {
     text-align: center;
 }
 
+.regsclosed {
+    position: relative;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: xx-large;
+    color: red;
+    padding-top: 30px;
+}
+
 
 /* future buttons*/
 
