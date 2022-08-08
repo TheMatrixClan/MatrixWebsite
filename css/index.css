@@ -199,7 +199,6 @@ a:visited {
     min-height: 100%;
     min-width: 100%;
     height: auto;
-    background: url(png/blank.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -384,13 +383,11 @@ a:visited {
         height: auto;
         display: block;
         position: relative;
-        vertical-align: middle;
         padding-top: 20px;
         margin: 0 auto;
     }
     .rectify {
         display: block;
-        vertical-align: middle;
         padding-left: 20px;
         padding-right: 20px;
     }
