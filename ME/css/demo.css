@@ -8,11 +8,6 @@ body {
 }
 
 body {
-    background: url(me2021.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     font-weight: 400;
     font-size: 15px;
     color: #aa3e03;
@@ -211,4 +206,20 @@ body {
         color: #212121;
         background-color: #fff;
     }
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    opacity: 1;
+}
+
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    z-index: 0;
 }

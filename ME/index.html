@@ -7,63 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="css/png/matrix.png">
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/style1.css" />
+
+    <script language="javascript" type="text/javascript" src="../matrix.js"></script>
+    <script language="javascript" type="text/javascript" src="../libraries/p5.js"></script>
 </head>
 
-<div class="container">
-    <div class="main">
+<body>
+    <div class="overlay">
+        <div class="container">
+            <div class="main">
+            </div>
+
+            <hr size="2px" width="25%" style="color: #fff; margin-top: 25px; margin-top: 30vh; margin-bottom: 0px;">
+            <p id="demo"></p>
+            <script>
+                // Set the date
+                var countDownDate = new Date("September 3, 2022 00:13:00").getTime();
+
+
+                var x = setInterval(function() {
+
+
+                    var now = new Date().getTime();
+
+
+                    var distance = countDownDate - now;
+
+
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+                    document.getElementById("demo").innerHTML = days + " days | " + hours + " hours | " + minutes + " minutes | " + seconds + " seconds";
+
+
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "See you next year!";
+                    }
+                }, 1000);
+            </script>
+
+            <hr size="2px" width="25%" style="color: #fff; margin-top: 25px; margin-bottom: 0px;">
+
+
+
+            <div class="buttons">
+                <div class="button">
+                    <a href="matrix_invite.pdf">Events</a>
+                </div>
+
+                <div class="button2">
+                    <a href="https://forms.gle/zvmZAvfof2qwpSaR9">Register for Matrix</a>
+                </div>
+                <div class="button2">
+                    <a href="EcommBuzz.html">Register for EcommBuzz</a>
+                </div>
+            </div>
+
+        </div>
     </div>
-
-    <hr size="2px" width="25%" style="color: #fff; margin-top: 25px; margin-top: 30vh; margin-bottom: 0px;">
-    <p id="demo"></p>
-    <script>
-        // Set the date
-        var countDownDate = new Date("September 3, 2022 00:13:00").getTime();
-
-
-        var x = setInterval(function() {
-
-
-            var now = new Date().getTime();
-
-
-            var distance = countDownDate - now;
-
-
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-
-            document.getElementById("demo").innerHTML = days + " days | " + hours + " hours | " + minutes + " minutes | " + seconds + " seconds";
-
-
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = " You Are History";
-            }
-        }, 1000);
-    </script>
-
-    <hr size="2px" width="25%" style="color: #fff; margin-top: 25px; margin-bottom: 0px;">
-
-
-
-    <div class="buttons">
-        <div class="button">
-            <a href="matrix_invite.pdf">Events</a>
-        </div>
-
-        <div class="button2">
-            <a href="https://forms.gle/zvmZAvfof2qwpSaR9">Register for Matrix</a>
-        </div>
-        <div class="button2">
-            <a href="EcommBuzz.html">Register for EcommBuzz</a>
-        </div>
-    </div>
-
-</div>
 </body>
 
 </html>
