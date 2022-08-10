@@ -384,13 +384,11 @@ a:visited {
         height: auto;
         display: block;
         position: relative;
-        vertical-align: middle;
         padding-top: 20px;
         margin: 0 auto;
     }
     .rectify {
         display: block;
-        vertical-align: middle;
         padding-left: 20px;
         padding-right: 20px;
     }

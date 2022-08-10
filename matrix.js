@@ -64,7 +64,8 @@ function Symbol(x, y, speed, firstLetter, opacity) {
 function Stream() {
   this.symbols = [];
   this.range = round(random(10, 40));
-  this.speed = random(2, 10);
+
+  this.speed = random(2, 8);
 
   this.generateSymbols = function(x, y) {
     var firstLetter = true; // the firstLetter generated symbol is identified right before entering the loop (rest of symbols)
